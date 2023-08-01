@@ -43,13 +43,13 @@ const Hero = () => {
           </a>
         </div>
 
-        <div className="hero-img">
+        {/*      <div className="hero-img">
           <img
             src={HeroImg}
             alt="coding illustration"
             className="lgw-[80%] ml-auto"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );

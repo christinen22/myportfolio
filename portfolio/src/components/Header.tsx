@@ -21,19 +21,22 @@ const Header = () => {
           className={`${isActive ? "show" : ""}`}
         >
           <Nav className="me-auto">
-            <Nav.Link as={NavLink} to="/#about">
+            <Nav.Link as={NavLink} to="/">
+              Home
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/about">
               About
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/#projects">
+            <Nav.Link as={NavLink} to="/projects">
               Projects
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/#blog">
+            <Nav.Link as={NavLink} to="/blog">
               Blog
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/#resume">
+            <Nav.Link as={NavLink} to="/resume">
               Resume
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/#contact">
+            <Nav.Link as={NavLink} to="/contact">
               Contact
             </Nav.Link>
           </Nav>

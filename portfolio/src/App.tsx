@@ -1,24 +1,18 @@
 import "./App.scss";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Blog from "./components/Blog";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Pages from "./pages/Pages";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Header />
-        <Hero />
-        <About />
-        <Projects />
-        <Blog />
-        <Contact />
-        <Footer />
+        <main className="text-gray-400 bg-gray-900 body-font">
+          <Header />
+          <Pages />
+          <Footer />
+        </main>
       </BrowserRouter>
     </>
   );
