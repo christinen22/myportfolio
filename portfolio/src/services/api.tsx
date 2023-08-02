@@ -29,3 +29,30 @@ export const createPost = async () => {
   const res = await axios.post(`${baseUrl}/posts`);
   return res.data;
 };
+
+/**
+ * GET projects
+ */
+export const getProjects = async () => {
+  const res = await axios.get(`${baseUrl}/projects`);
+  return res.data;
+};
+
+/**
+ * GET single project
+ */
+
+export const getProject = async (id: number) => {
+  const res = await axios.get(`${baseUrl}/project/${id}`);
+
+  return res.data;
+};
+
+/**
+ * POST project
+ */
+
+export const createProject = async () => {
+  const res = await axios.post(`${baseUrl}/projects`);
+  return res.data;
+};
