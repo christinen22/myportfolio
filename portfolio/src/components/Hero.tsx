@@ -14,7 +14,7 @@ const Hero = () => {
               <p className="hero-subtitle">
                 I am in love with the world of code.
               </p>
-              <Button href="#contact" variant="primary" className="hero-button">
+              <Button href="/contact" variant="primary" className="hero-button">
                 Get in Touch
               </Button>
             </div>
