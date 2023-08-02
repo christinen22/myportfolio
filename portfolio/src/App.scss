@@ -10,10 +10,53 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #cdcfd0;
+  color: #333;
+  
 }
 
-.hero-img {
+/* .hero-img {
   display: flex;
  justify-content: space-between;
   align-items: center;
+} */
+
+/* HeroSection.css */
+.hero-section {
+
+  padding: 100px 0;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  max-width: 450px;
+  margin-right: auto;
+  padding: 50px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  font-size: 1.25rem;
+  background-color: #333;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
 }
