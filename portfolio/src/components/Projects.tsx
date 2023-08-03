@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import { IProject } from "../types";
 import { getProject, getProjects } from "../services/api";
 
@@ -24,9 +25,21 @@ const Projects: React.FC = () => {
             <Card>
               <Card.Body>
                 <Card.Title>{project.title}</Card.Title>
-                <Card.Text>{project.description}</Card.Text>
+                <Card.Text>
+                  {project.description.split("\\n").map((line, index) => (
+                    <p key={index}>{line}</p>
+                  ))}
+                </Card.Text>
                 <Card.Img src={project.image} alt={project.title} />
-                <Card.Text>{project.link}</Card.Text>
+                <Card.Text>
+                  <NavLink
+                    to={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {project.link}
+                  </NavLink>
+                </Card.Text>
               </Card.Body>
             </Card>
           </Col>

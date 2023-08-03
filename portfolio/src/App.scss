@@ -15,6 +15,14 @@ body {
   
 }
 
+p {
+  margin-bottom: 0.2rem;
+}
+
+a {
+  color:#777;
+}
+
 /* .hero-img {
   display: flex;
  justify-content: space-between;
@@ -51,12 +59,61 @@ body {
   margin-bottom: 30px;
 }
 
-.hero-button {
+.btn {
   font-size: 1.25rem;
   background-color: #333;
+  
 }
 
 .hero-image img {
   max-width: 100%;
   height: auto;
 }
+
+
+/* Card */
+
+.card.title {
+  margin-bottom: 1rem;
+}
+
+/*Contact */
+
+/* ContactPage.css */
+.contact-section {
+  background-color: #f8f9fa;
+  padding: 100px 0;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-subtitle {
+  font-size: 1.25rem;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.contact-content {
+  padding: 40px;
+  //background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+

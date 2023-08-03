@@ -56,3 +56,12 @@ export const createProject = async () => {
   const res = await axios.post(`${baseUrl}/projects`);
   return res.data;
 };
+
+/**
+ * POST contact
+ */
+
+export const createMessage = async (formData: FormData) => {
+  const res = await axios.post(`${baseUrl}/send-email`, formData);
+  return res.data;
+};

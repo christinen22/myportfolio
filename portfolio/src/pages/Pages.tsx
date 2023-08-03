@@ -4,6 +4,7 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import Blog from "../components/Blog";
 import Contact from "../components/Contact";
+import ContactForm from "../components/ContactForm";
 
 const Pages = () => {
   return (
@@ -12,7 +13,7 @@ const Pages = () => {
       <Route path="/about" element={<About />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/blog" element={<Blog />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/contact" element={<ContactForm />} />
     </Routes>
   );
 };
