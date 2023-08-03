@@ -15,7 +15,7 @@ const About = () => {
             apps!
           </h1>
           <img src={Chrissy} alt="illustration" className="chrissy-img" />
-          <p className="mb-8">
+          <p className="mb-8 about-text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
             laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
             Laborum, voluptas natus?Lorem ipsum dolor sit amet, consectetur

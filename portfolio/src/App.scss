@@ -10,8 +10,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #cdcfd0;
-  color: #333;
+  background-color: #FCF6F5;
+  color: #990011;
   
 }
 
@@ -47,27 +47,29 @@ a {
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-weight: bold;
-  color: #333;
+  color: #990011;
   margin-bottom: 20px;
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
-  color: #777;
+  font-size: 2.5rem;
+  color: #990011;
   margin-bottom: 30px;
 }
 
+
+
 .btn {
   font-size: 1.25rem;
-  background-color: #333;
+  background-color: #990011;
   
 }
 
 .hero-image img {
-  max-width: 100%;
-  height: auto;
+  height: 500px;
+  width: auto;
 }
 
 
@@ -81,20 +83,20 @@ a {
 
 /* ContactPage.css */
 .contact-section {
-  background-color: #f8f9fa;
+  background-color: #FCF6F5;
   padding: 100px 0;
 }
 
 .contact-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #333;
+  color: #990011;
   margin-bottom: 20px;
 }
 
 .contact-subtitle {
   font-size: 1.25rem;
-  color: #777;
+  color: #990011;
   margin-bottom: 30px;
 }
 
@@ -122,4 +124,26 @@ a {
 .resume-title {
   text-align: center;
   margin: 2rem;
+}
+
+.resume-card-title {
+  border-bottom: 2px solid #990011;
+  font-style: italic;
+}
+
+.resume-card-text {
+  margin-bottom: 2rem;
+}
+
+li {
+  list-style: circle;
+}
+
+.about-text {
+  padding: 3rem;
+  color: #333;
+}
+
+.nav-link {
+  color: #990011;
 }
