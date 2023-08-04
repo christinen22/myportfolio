@@ -22,7 +22,7 @@ const Blog: React.FC = () => {
 
   return (
     <Container>
-      <h1 className="mt-5">Blog Posts</h1>
+      <h1 className="mt-5 blog-h1">Blog Posts</h1>
       <Row>
         {posts.map((post) => (
           <Col key={post.id} xs={12} md={6} lg={4} className="mb-4">

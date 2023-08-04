@@ -18,7 +18,7 @@ const Projects: React.FC = () => {
 
   return (
     <Container>
-      <h1 className="mt-5">Previous Projects</h1>
+      <h1 className="mt-5 project-h1">Previous Projects</h1>
       <Row>
         {projects.map((project) => (
           <Col key={project.id} xs={12} md={6} lg={4} className="mb-4">

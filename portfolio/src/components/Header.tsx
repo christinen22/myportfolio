@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <Navbar bg="black" expand="lg" variant="dark">
+    <Navbar expand="lg" variant="dark" className="custom-navbar">
       <Container>
         <Navbar.Toggle onClick={handleToggle} aria-controls="navbarHome" />
 
@@ -21,7 +21,7 @@ const Header = () => {
           className={`${isActive ? "show" : ""}`}
         >
           <Nav className="me-auto">
-            <Nav.Link as={NavLink} to="/">
+            <Nav.Link as={NavLink} to="/" className="custom-nav-link">
               Home
             </Nav.Link>
             <Nav.Link as={NavLink} to="/about">

@@ -9,7 +9,7 @@ const About = () => {
           lg={true}
           className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
         >
-          <h1 className="sm:text-4xl text-3xl mb-4">
+          <h1 className="sm:text-4xl text-3xl mb-4 about-h1">
             Hi, I'm Christine.
             <br className="hidden lg:inline-block" />I love to code and build
             apps!

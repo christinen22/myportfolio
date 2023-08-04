@@ -1,5 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Open+Sans:wght@300&family=Rubik+Vinyl&family=Shadows+Into+Light&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Julius+Sans+One&family=Open+Sans:wght@300&family=Rubik+Vinyl&family=Shadows+Into+Light&display=swap');
+
 @import 'bootstrap/scss/bootstrap';
 
 * {
@@ -11,7 +16,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #FCF6F5;
-  color: #990011;
+  color: #e74c3c;
   
 }
 
@@ -20,7 +25,7 @@ p {
 }
 
 a {
-  color:#777;
+  color:#333333;
 }
 
 /* .hero-img {
@@ -29,10 +34,17 @@ a {
   align-items: center;
 } */
 
+
+
 /* HeroSection.css */
 .hero-section {
 
   padding: 100px 0;
+  background: url('./assets/hero.jpeg');
+  background-position-x: center;
+	background-position-y: center;
+  background-size: cover;
+  
 }
 
 .hero-container {
@@ -47,23 +59,27 @@ a {
 }
 
 .hero-title {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: bold;
-  color: #990011;
+  color: #e74c3c;
   margin-bottom: 20px;
+  //font-family: 'Shadows Into Light', cursive;
+  font-family: 'Amatic SC', cursive;
 }
 
 .hero-subtitle {
   font-size: 2.5rem;
-  color: #990011;
+  color: #e67e22 ;
   margin-bottom: 30px;
+  letter-spacing: 0.2rem;
 }
 
 
 
 .btn {
   font-size: 1.25rem;
-  background-color: #990011;
+  background-color: #e74c3c;
+  margin-top: 1rem;
   
 }
 
@@ -72,12 +88,41 @@ a {
   width: auto;
 }
 
+/* About */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.about-h1, .project-h1, .blog-h1, .resume-title, .contact-title {
+  margin-top: 3rem;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.chrissy-img {
+  padding: 3rem;
+}
 
 /* Card */
 
-.card.title {
+.card-title {
   margin-bottom: 1rem;
+  color: #e74c3c;
 }
+
+.resume-card, .card {
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+
+
 
 /*Contact */
 
@@ -90,13 +135,13 @@ a {
 .contact-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #990011;
+  color:#e74c3c;
   margin-bottom: 20px;
 }
 
 .contact-subtitle {
   font-size: 1.25rem;
-  color: #990011;
+  color: #e67e22;
   margin-bottom: 30px;
 }
 
@@ -119,7 +164,7 @@ a {
   font-weight: bold;
 }
 
-/* Resumesection */
+/* Resume section */
 
 .resume-title {
   text-align: center;
@@ -127,8 +172,11 @@ a {
 }
 
 .resume-card-title {
-  border-bottom: 2px solid #990011;
-  font-style: italic;
+  border-bottom: 2px solid #e74c3c;
+font-weight: bold;
+font-size: 3rem;
+  font-family: 'Amatic SC', cursive;
+  color: #e67e22 ;
 }
 
 .resume-card-text {
@@ -141,9 +189,48 @@ li {
 
 .about-text {
   padding: 3rem;
-  color: #333;
+  color: #333333;
 }
 
 .nav-link {
-  color: #990011;
+  color: #e74c3c;
+}
+
+/* Footer */
+.footer {
+  background-color: #e74c3c; /* Set the background color */
+  color: #ffffff; /* Set the text color */
+  //padding: 2rem 0; /* Adjust the padding as needed */
+  width: 100%;
+  max-width: none;
+  margin-bottom: 0%;
+}
+
+.custom-navbar {
+  background-color: #e74c3c; /* Set the background color */
+}
+
+.nav-link {
+  color: #FCF6F5;
+}
+
+.navbar-nav .nav-link.active {
+  color:#333333
+}
+
+.social-media-li{
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color:#FCF6F5;
+}
+.social-media-list {
+  padding-left: 0%;
+}
+
+.footer-col {
+  padding: 2rem;
 }
