@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
 import { IPost } from "../types";
 import { getPosts, getPost } from "../services/api";
+import { Link } from "react-router-dom";
 
 const Blog: React.FC = () => {
   const [posts, setPosts] = useState<IPost[]>([]);
@@ -20,6 +21,15 @@ const Blog: React.FC = () => {
     return date.toLocaleDateString(); // Change format on created at
   };
 
+  const renderLineBreaks = (text: string) => {
+    return text.split("\n").map((line, index) => (
+      <div key={index}>
+        {line}
+        <br />
+      </div>
+    ));
+  };
+
   return (
     <Container>
       <h1 className="mt-5 blog-h1">Blog Posts</h1>
@@ -29,8 +39,11 @@ const Blog: React.FC = () => {
             <Card>
               <Card.Body>
                 <Card.Title>{post.title}</Card.Title>
-                <Card.Text>{post.content}</Card.Text>
+                <Card.Text>{renderLineBreaks(post.content)}</Card.Text>
                 <Card.Text>{formatDate(post.created_at)}</Card.Text>
+                <Link to={`/blog/${post.id}`} className="btn btn-primary">
+                  Read More
+                </Link>
               </Card.Body>
             </Card>
           </Col>

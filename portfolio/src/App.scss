@@ -198,12 +198,18 @@ li {
 
 /* Footer */
 .footer {
-  background-color: #e74c3c; /* Set the background color */
-  color: #ffffff; /* Set the text color */
-  //padding: 2rem 0; /* Adjust the padding as needed */
+  background-color: #e74c3c; 
+  color: #ffffff; 
   width: 100%;
   max-width: none;
   margin-bottom: 0%;
+  
+}
+
+
+.footer-row{
+  display: flex;
+  justify-content: center;
 }
 
 .custom-navbar {
