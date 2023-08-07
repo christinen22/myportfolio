@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Card, Container, Row, Col } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { getPost } from "../services/api";
 import { IPost } from "../types";
@@ -15,20 +16,40 @@ const PostDetail: React.FC = () => {
   useEffect(() => {
     const fetchPost = async () => {
       const res = await getPost(Number(id));
-      setPost(res);
+      setPost(res.data);
+      console.log(res.data);
     };
     fetchPost();
   }, [id]);
+
+  const renderWithLineBreaks = (text: string) => {
+    return text.split("\n").map((line, index) => (
+      <span key={index}>
+        {line}
+        <br />
+      </span>
+    ));
+  };
+
+  const formatDate = (isoDate: string): string => {
+    const date = new Date(isoDate);
+    return date.toLocaleDateString(); // Change format on created at
+  };
 
   if (!post) {
     return <div>Loading...</div>;
   }
 
   return (
-    <div>
-      <h2>{post.title}</h2>
-      <p>{post.content}</p>
-    </div>
+    <Container>
+      <h1 className="mt-5 blog-h1">{post.title}</h1>
+      <Card>
+        <Card.Body>
+          <Card.Text>{renderWithLineBreaks(post.content)}</Card.Text>
+          <Card.Text>{formatDate(post.created_at)}</Card.Text>
+        </Card.Body>
+      </Card>
+    </Container>
   );
 };
 

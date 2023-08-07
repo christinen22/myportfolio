@@ -30,14 +30,17 @@ const Pages = () => {
       <Route path="/projects" element={<Projects />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/:id" element={<PostDetail />} />
-
       <Route path="/contact" element={<ContactForm />} />
       <Route path="/resume" element={<Resume />} />
       <Route path="/login" element={<LoginForm onLogin={handleLogin} />} />
-      <Route
-        path="/create-post"
-        element={<CreatePostForm onPostCreated={handlePostCreated} />}
-      />
+
+      {/* Conditionally render the create-post route based on authentication */}
+      {isAuthenticated && (
+        <Route
+          path="/create-post"
+          element={<CreatePostForm onPostCreated={handlePostCreated} />}
+        />
+      )}
     </Routes>
   );
 };
