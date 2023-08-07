@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
     e.preventDefault();
 
     try {
-      await axios.post("http://127.0.0.1:8000/send-email", formData);
+      await axios.post("https://christinenapi.com/send-email", formData);
       console.log("Email sent successfully");
       setIsEmailSent(true);
       setFormData({ name: "", email: "", message: "" }); // Clear input fields

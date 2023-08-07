@@ -16,7 +16,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://127.0.0.1:8000/api/login", {
+      const response = await axios.post("https://christinenapi.com/api/login", {
         email,
         password,
       });
