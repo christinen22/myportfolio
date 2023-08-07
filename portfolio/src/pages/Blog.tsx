@@ -21,13 +21,18 @@ const Blog: React.FC = () => {
     return date.toLocaleDateString(); // Change format on created at
   };
 
-  const renderLineBreaks = (text: string) => {
-    return text.split("\n").map((line, index) => (
-      <div key={index}>
-        {line}
-        <br />
+  const renderFirstFiveLines = (text: string): JSX.Element => {
+    const lines = text.split("\n").slice(0, 5);
+    return (
+      <div>
+        {lines.map((line, index) => (
+          <div key={index}>
+            {line}
+            <br />
+          </div>
+        ))}
       </div>
-    ));
+    );
   };
 
   return (
@@ -39,7 +44,7 @@ const Blog: React.FC = () => {
             <Card>
               <Card.Body>
                 <Card.Title>{post.title}</Card.Title>
-                <Card.Text>{renderLineBreaks(post.content)}</Card.Text>
+                <Card.Text>{renderFirstFiveLines(post.content)}</Card.Text>
                 <Card.Text>{formatDate(post.created_at)}</Card.Text>
                 <Link to={`/blog/${post.id}`} className="btn btn-primary">
                   Read More
