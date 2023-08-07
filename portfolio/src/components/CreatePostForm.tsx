@@ -32,7 +32,7 @@ const CreatePostForm: React.FC<CreatePostFormProps> = () => {
       );
 
       if (response.status === 200) {
-        // Post created successfully, redirect to blog page or wherever you want
+        // Post created successfully, redirect to blog page
         navigate("/blog");
       }
     } catch (error) {
