@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Card, Container, Row, Col } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { getPost } from "../services/api";
 import { IPost } from "../types";
