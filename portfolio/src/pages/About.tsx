@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Col } from "react-bootstrap";
 import Chrissy from "../assets/chrissy.png";
 
 const About = () => {

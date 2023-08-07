@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { IProject } from "../types";
-import { getProject, getProjects } from "../services/api";
+import { getProjects } from "../services/api";
 
 const Projects: React.FC = () => {
   const [projects, setProjects] = useState<IProject[]>([]);
