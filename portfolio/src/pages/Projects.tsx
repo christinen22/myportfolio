@@ -35,13 +35,13 @@ const Projects: React.FC = () => {
                 <Card.Img src={project.image} alt={project.title} />
                 <p className="github-p">Check out my code for the project:</p>
                 <Card.Text>
-                  <NavLink
-                    to={project.link}
+                  <a
+                    href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     {project.link}
-                  </NavLink>
+                  </a>
                 </Card.Text>
               </Card.Body>
             </Card>

@@ -45,10 +45,12 @@ const Blog: React.FC = () => {
               <Card.Body>
                 <Card.Title>{post.title}</Card.Title>
                 <Card.Text>{renderFirstFiveLines(post.content)}</Card.Text>
-                <Card.Text>{formatDate(post.created_at)}</Card.Text>
-                <Link to={`/blog/${post.id}`} className="btn btn-primary">
+
+                <p className="p-date">{formatDate(post.created_at)}</p>
+
+                {/*      <Link to={`/blog/${post.id}`} className="btn btn-primary">
                   Read More
-                </Link>
+                </Link> */}
               </Card.Body>
             </Card>
           </Col>
