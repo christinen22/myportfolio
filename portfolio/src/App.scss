@@ -106,6 +106,11 @@ a {
   color: #e74c3c;
 }
 
+.card-img {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
 .resume-card, .card {
   padding: 40px;
   border-radius: 10px;
@@ -113,6 +118,9 @@ a {
   margin-bottom: 2rem;
 }
 
+.card-p {
+  margin-bottom: 1rem;
+}
 
 
 
@@ -206,7 +214,7 @@ li {
 }
 
 .custom-navbar {
-  background-color: #e74c3c; /* Set the background color */
+  background-color: #e74c3c; 
 }
 
 .nav-link {
@@ -222,9 +230,16 @@ li {
   text-decoration: none;
 }
 
-a {
+.social-media-a {
   text-decoration: none;
   color:#FCF6F5;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #e74c3c;
+  font-size: 0.8em;
 }
 .social-media-list {
   padding-left: 0%;
@@ -233,3 +248,13 @@ a {
 .footer-col {
  margin-top: 0.5rem;
 }
+
+.github-link {
+  color: #e74c3c;
+  font-size: 0.8em;
+}
+
+.github-p {
+  font-size: 0.8em;
+}
+

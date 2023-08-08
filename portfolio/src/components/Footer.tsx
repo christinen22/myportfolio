@@ -21,6 +21,7 @@ const Footer: React.FC = () => {
                 href="https://github.com/christinen22"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="social-media-a"
               >
                 <FaGithub /> GitHub
               </a>
@@ -30,6 +31,7 @@ const Footer: React.FC = () => {
                 href="https://www.linkedin.com/in/christine-nilsson-82536267/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="social-media-a"
               >
                 <FaLinkedinIn /> LinkedIn
               </a>

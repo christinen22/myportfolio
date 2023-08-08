@@ -27,10 +27,13 @@ const Projects: React.FC = () => {
                 <Card.Title>{project.title}</Card.Title>
                 <Card.Text>
                   {project.description.split("\\n").map((line, index) => (
-                    <p key={index}>{line}</p>
+                    <p className="card-p" key={index}>
+                      {line}
+                    </p>
                   ))}
                 </Card.Text>
                 <Card.Img src={project.image} alt={project.title} />
+                <p className="github-p">Check out my code for the project:</p>
                 <Card.Text>
                   <NavLink
                     to={project.link}
