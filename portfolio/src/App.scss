@@ -28,18 +28,12 @@ a {
   color:#333333;
 }
 
-/* .hero-img {
-  display: flex;
- justify-content: space-between;
-  align-items: center;
-} */
 
 
 
-/* HeroSection.css */
+/* HeroSection*/
+
 .hero-section {
-
-  padding: 100px 0;
   background: url('./assets/hero.jpeg');
   background-position-x: center;
 	background-position-y: center;
@@ -237,5 +231,5 @@ a {
 }
 
 .footer-col {
-  padding: 2rem;
+ margin-top: 0.5rem;
 }

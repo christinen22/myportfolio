@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
         </Col>
         <Col lg={6} md={6} sm={12} className="footer-col">
           <h3>Connect with me</h3>
-          <p>Follow me on:</p>
+
           <ul className="social-media-list">
             <li className="social-media-li">
               <a
