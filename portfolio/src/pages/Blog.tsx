@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
 import { IPost } from "../types";
 import { getPosts } from "../services/api";
-import { Link } from "react-router-dom";
 
 const Blog: React.FC = () => {
   const [posts, setPosts] = useState<IPost[]>([]);

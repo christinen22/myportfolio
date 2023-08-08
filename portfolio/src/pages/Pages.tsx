@@ -10,6 +10,8 @@ import CreatePostForm from "../components/CreatePostForm";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import PostDetail from "./PostDetail";
+import CreateProjectForm from "../components/CreateProjectForm";
+import CreatePage from "./CreatePage";
 
 const Pages = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -21,6 +23,11 @@ const Pages = () => {
   const handlePostCreated = () => {
     const navigate = useNavigate();
     navigate("/blog"); // Redirect to the blog page after successful post creation
+  };
+
+  const handleProjectCreated = () => {
+    const navigate = useNavigate();
+    navigate("/projects"); // Redirect to the project page after successful post creation
   };
 
   return (
@@ -35,12 +42,7 @@ const Pages = () => {
       <Route path="/login" element={<LoginForm onLogin={handleLogin} />} />
 
       {/* Conditionally render the create-post route based on authentication */}
-      {isAuthenticated && (
-        <Route
-          path="/create-post"
-          element={<CreatePostForm onPostCreated={handlePostCreated} />}
-        />
-      )}
+      {isAuthenticated && <Route path="/create" element={<CreatePage />} />}
     </Routes>
   );
 };

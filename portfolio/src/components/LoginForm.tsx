@@ -24,7 +24,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
       const { token } = response.data;
       localStorage.setItem("token", token);
       onLogin(); // Notify the parent component about successful login
-      navigate("/create-post"); // Redirect to the create-post page
+      navigate("/create"); // Redirect to the create-post page
     } catch (error) {
       setError("Invalid credentials. Please try again.");
     }

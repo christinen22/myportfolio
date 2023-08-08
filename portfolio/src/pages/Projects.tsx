@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
 import { IProject } from "../types";
 import { getProjects } from "../services/api";
 
