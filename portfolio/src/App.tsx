@@ -8,11 +8,8 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <main className="text-gray-400 bg-gray-900 body-font">
-          <Header />
-          <Pages />
-          <Footer />
-        </main>
+        <Pages />
+        <Footer />
       </BrowserRouter>
     </>
   );
