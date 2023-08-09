@@ -223,6 +223,8 @@ li {
 .custom-navbar {
   background-color: #e74c3c; 
   position: fixed;
+  width: 100vw;
+  z-index: 2;
 }
 
 .nav-link {
