@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { IPost } from "../types";
 import { getPosts } from "../services/api";
 
@@ -47,9 +48,9 @@ const Blog: React.FC = () => {
 
                 <p className="p-date">{formatDate(post.created_at)}</p>
 
-                {/*      <Link to={`/blog/${post.id}`} className="btn btn-primary">
+                <Link to={`/blog/${post.id}`} className="btn btn-primary">
                   Read More
-                </Link> */}
+                </Link>
               </Card.Body>
             </Card>
           </Col>

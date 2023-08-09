@@ -51,6 +51,7 @@ const CreatePostForm: React.FC<CreatePostFormProps> = () => {
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             required
+            className="label-form"
           />
         </div>
         <div>
@@ -59,6 +60,7 @@ const CreatePostForm: React.FC<CreatePostFormProps> = () => {
             value={content}
             onChange={(e) => setContent(e.target.value)}
             required
+            className="textarea-form"
           ></textarea>
         </div>
         <button type="submit">Create Post</button>

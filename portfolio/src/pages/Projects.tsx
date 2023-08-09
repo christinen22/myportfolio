@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { IProject } from "../types";
 import { getProjects } from "../services/api";
 
@@ -32,7 +33,7 @@ const Projects: React.FC = () => {
                   ))}
                 </Card.Text>
                 <Card.Img src={project.image} alt={project.title} />
-                <p className="github-p">Check out my code for the project:</p>
+                {/*          <p className="github-p">Check out my code for the project:</p>
                 <Card.Text>
                   <a
                     href={project.link}
@@ -41,7 +42,13 @@ const Projects: React.FC = () => {
                   >
                     {project.link}
                   </a>
-                </Card.Text>
+                </Card.Text> */}
+                <Link
+                  to={`/projects/${project.id}`}
+                  className="btn btn-primary"
+                >
+                  Read More
+                </Link>
               </Card.Body>
             </Card>
           </Col>

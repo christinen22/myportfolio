@@ -1,4 +1,3 @@
-import React from "react";
 import CreatePostForm from "../components/CreatePostForm";
 import CreateProjectForm from "../components/CreateProjectForm";
 import { useNavigate } from "react-router-dom";

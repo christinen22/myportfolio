@@ -17,6 +17,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #FCF6F5;
   color: #e74c3c;
+
   
 }
 
@@ -34,10 +35,16 @@ a {
 /* HeroSection*/
 
 .hero-section {
-  background: url('./assets/hero.jpeg');
-  background-position-x: center;
+  background: 
+  linear-gradient(90deg, #03030388 0%, #120f0f88 100%),
+  url('./assets/hero.png');
+  background-position-x: right;
 	background-position-y: center;
-  background-size: cover;
+  //background-size: cover;
+  background-repeat: no-repeat;
+  //margin-right: 10rem;
+
+  //background-color: #FCF6F5;
   
 }
 
@@ -48,7 +55,7 @@ a {
 
 .hero-content {
   max-width: 450px;
-  margin-right: auto;
+  //margin-right: auto;
   padding: 50px;
 }
 
@@ -260,4 +267,33 @@ a {
 
 .p-date {
   margin-top: 2rem;
+}
+
+.label-form {
+  width: 100vw;
+
+}
+
+.textarea-form {
+  width: 100vw;
+  height: 500px;
+}
+
+
+@media screen and (min-width: 730px) {
+.hero-section {
+  background: 
+
+  url('./assets/hero.png');
+  border-radius: 2rem;
+  background-position-x: right;
+	background-position-y: center;
+  //background-size: cover;
+  background-repeat: no-repeat;
+
+  //margin-right: 10rem;
+
+  //background-color: #FCF6F5;
+  
+}
 }

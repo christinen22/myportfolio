@@ -55,6 +55,7 @@ const CreateProjectForm: React.FC<CreateProjectFormProps> = () => {
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             required
+            className="label-form"
           />
         </div>
         <div>
@@ -63,6 +64,7 @@ const CreateProjectForm: React.FC<CreateProjectFormProps> = () => {
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             required
+            className="textarea-form"
           ></textarea>
         </div>
         <div>
@@ -71,6 +73,7 @@ const CreateProjectForm: React.FC<CreateProjectFormProps> = () => {
             value={image}
             onChange={(e) => setImage(e.target.value)}
             required
+            className="label-form"
           ></textarea>
         </div>
         <div>
@@ -79,6 +82,7 @@ const CreateProjectForm: React.FC<CreateProjectFormProps> = () => {
             value={link}
             onChange={(e) => setLink(e.target.value)}
             required
+            className="label-form"
           ></textarea>
         </div>
 
