@@ -44,7 +44,9 @@ const Blog: React.FC = () => {
             <Card>
               <Card.Body>
                 <Card.Title>{post.title}</Card.Title>
-                <Card.Text>{renderFirstFiveLines(post.content)}</Card.Text>
+                <Card.Text className="card-text-pre">
+                  {renderFirstFiveLines(post.content)}
+                </Card.Text>
 
                 <p className="p-date">{formatDate(post.created_at)}</p>
 

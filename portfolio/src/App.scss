@@ -108,6 +108,10 @@ a {
 
 /* Card */
 
+.card {
+  max-width: 800px;
+}
+
 .card-title {
   margin-bottom: 1rem;
   color: #e74c3c;
@@ -116,6 +120,8 @@ a {
 .card-img {
   margin-top: 1rem;
   margin-bottom: 2rem;
+  max-width: 500px;
+  height: auto;
 }
 
 .resume-card, .card {
@@ -128,6 +134,20 @@ a {
 .card-p {
   margin-bottom: 1rem;
 }
+
+.card-body {
+  //height: 500px;
+  overflow: hidden;
+}
+
+.card-text-pre {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5; /* Number of lines to show before ellipsis */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 
 
 

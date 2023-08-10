@@ -44,9 +44,9 @@ const PostDetail: React.FC = () => {
     <Container>
       <h1 className="mt-5 blog-h1">{post.title}</h1>
       <Card>
+        <Card.Text>{formatDate(post.created_at)}</Card.Text>
         <Card.Body>
           <Card.Text>{renderWithLineBreaks(post.content)}</Card.Text>
-          <Card.Text>{formatDate(post.created_at)}</Card.Text>
         </Card.Body>
       </Card>
     </Container>

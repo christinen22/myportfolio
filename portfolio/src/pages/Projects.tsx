@@ -16,6 +16,20 @@ const Projects: React.FC = () => {
     fetchProjects();
   }, []);
 
+  const renderFirstFiveLines = (text: string): JSX.Element => {
+    const lines = text.split("\n").slice(0, 5);
+    return (
+      <div>
+        {lines.map((line, index) => (
+          <div key={index}>
+            {line}
+            <br />
+          </div>
+        ))}
+      </div>
+    );
+  };
+
   return (
     <Container>
       <h1 className="mt-5 project-h1">Previous Projects</h1>
@@ -25,12 +39,8 @@ const Projects: React.FC = () => {
             <Card>
               <Card.Body>
                 <Card.Title>{project.title}</Card.Title>
-                <Card.Text>
-                  {project.description.split("\\n").map((line, index) => (
-                    <p className="card-p" key={index}>
-                      {line}
-                    </p>
-                  ))}
+                <Card.Text className="card-text-pre">
+                  {renderFirstFiveLines(project.description)}
                 </Card.Text>
                 <Card.Img src={project.image} alt={project.title} />
                 {/*          <p className="github-p">Check out my code for the project:</p>

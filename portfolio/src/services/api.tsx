@@ -42,7 +42,7 @@ export const getProjects = async () => {
  */
 
 export const getProject = async (id: number) => {
-  const res = await axios.get(`${baseUrl}/project/${id}`);
+  const res = await axios.get(`${baseUrl}/projects/${id}`);
 
   return res.data;
 };

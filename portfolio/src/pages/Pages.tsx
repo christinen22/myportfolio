@@ -9,6 +9,7 @@ import LoginForm from "../components/LoginForm";
 import { useState } from "react";
 import PostDetail from "./PostDetail";
 import CreatePage from "./CreatePage";
+import ProjectDetails from "./ProjectDetails";
 
 const Pages = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -22,6 +23,7 @@ const Pages = () => {
       <Route path="/" element={<OnePager />} />
       <Route path="/about" element={<About />} />
       <Route path="/projects" element={<Projects />} />
+      <Route path="/projects/:id" element={<ProjectDetails />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/:id" element={<PostDetail />} />
       <Route path="/contact" element={<ContactForm />} />
