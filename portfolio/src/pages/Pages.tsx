@@ -10,6 +10,7 @@ import { useState } from "react";
 import PostDetail from "./PostDetail";
 import CreatePage from "./CreatePage";
 import ProjectDetails from "./ProjectDetails";
+import PageNotFound from "../components/PageNotFound";
 
 const Pages = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -29,6 +30,7 @@ const Pages = () => {
       <Route path="/contact" element={<ContactForm />} />
       <Route path="/resume" element={<Resume />} />
       <Route path="/login" element={<LoginForm onLogin={handleLogin} />} />
+      <Route path="*" element={<PageNotFound />} />
 
       {/* Conditionally render the create-post route based on authentication */}
       {isAuthenticated && <Route path="/create" element={<CreatePage />} />}
