@@ -11,6 +11,7 @@ const CreatePostForm: React.FC<CreatePostFormProps> = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [error, setError] = useState("");
+  const [image, setImage] = useState("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -23,6 +24,7 @@ const CreatePostForm: React.FC<CreatePostFormProps> = () => {
         {
           title,
           content,
+          image,
         },
         {
           headers: {
@@ -61,6 +63,15 @@ const CreatePostForm: React.FC<CreatePostFormProps> = () => {
             onChange={(e) => setContent(e.target.value)}
             required
             className="textarea-form"
+          ></textarea>
+        </div>
+        <div>
+          <label>Image url</label>
+          <textarea
+            value={image}
+            onChange={(e) => setImage(e.target.value)}
+            required
+            className="label-form"
           ></textarea>
         </div>
         <button type="submit">Create Post</button>

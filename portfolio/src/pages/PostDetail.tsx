@@ -47,6 +47,7 @@ const PostDetail: React.FC = () => {
         <Card.Text>{formatDate(post.created_at)}</Card.Text>
         <Card.Body>
           <Card.Text>{renderWithLineBreaks(post.content)}</Card.Text>
+          <Card.Img src={post.image} alt={post.title} />
         </Card.Body>
       </Card>
     </Container>
